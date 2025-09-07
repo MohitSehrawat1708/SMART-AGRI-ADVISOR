@@ -1,0 +1,184 @@
+# Smart Agricultural Advisor - Git Ignore File
+
+# Environment variables
+.env
+*.env
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# ML Models and Data
+ml-models/models/*.pkl
+ml-models/models/*.joblib
+ml-models/models/*.h5
+ml-models/models/*.pb
+ml-models/data/raw/*
+ml-models/data/processed/*
+ml-models/experiments/mlruns/
+!ml-models/data/raw/.gitkeep
+!ml-models/data/processed/.gitkeep
+
+# Logs
+*.log
+logs/
+backend/logs/
+ml-models/logs/
+
+# Database
+*.db
+*.sqlite3
+*.sqlite
+
+# Node.js (for mobile app and frontend)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.eslintcache
+
+# React Native
+mobile-app/android/app/build/
+mobile-app/ios/build/
+mobile-app/.expo/
+mobile-app/web-build/
+
+# Docker
+docker-compose.override.yml
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Uploads and temporary files
+uploads/
+temp/
+tmp/
+*.tmp
+
+# SSL Certificates
+*.pem
+*.crt
+*.key
+config/ssl/
+
+# Backup files
+backups/
+*.backup
+*.bak
+
+# Cache
+.cache/
+*.cache
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+.hypothesis/
+
+# pytest
+.pytest_cache/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Documentation builds
+docs/_build/
+
+# Translations
+*.mo
+*.pot
+
+# Local configuration
+local_settings.py
+
+# API Keys and Secrets (additional safety)
+*key*
+*secret*
+*password*
+*token*
+credentials.json
+service-account.json
+
+# Mobile specific
+mobile-app/android/app/release/
+mobile-app/ios/fastlane/report.xml
+mobile-app/ios/fastlane/Preview.html
+mobile-app/ios/fastlane/screenshots
+mobile-app/ios/fastlane/test_output
+
+# ML Specific
+*.h5
+*.hdf5
+*.pickle
+*.joblib
+wandb/
+mlruns/
+
+# Data files
+*.csv
+*.json
+*.xlsx
+*.xls
+!config/*.json
+!mobile-app/src/i18n/locales/*.json
+
+# Image files in uploads
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.svg
+!docs/images/
+!mobile-app/assets/
